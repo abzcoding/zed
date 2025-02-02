@@ -6,7 +6,6 @@
     }
   },
   {
-    //"context": "VimControl && !menu",
     "context": "ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
     "bindings": {
       "shift-l": "pane::ActivateNextItem",
