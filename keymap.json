@@ -1,0 +1,54 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "j k": ["workspace::SendKeystrokes", "escape cmd-s"]
+    }
+  },
+  {
+    //"context": "VimControl && !menu",
+    "context": "ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
+    "bindings": {
+      "shift-l": "pane::ActivateNextItem",
+      "shift-h": "pane::ActivatePrevItem",
+      "shift-x": "pane::CloseActiveItem"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      "g a": "editor::ToggleCodeActions",
+      "g shift-a": "editor::SelectAllMatches",
+      "space o": "outline::Toggle"
+    }
+  },
+  {
+    "context": "vim_mode == visual",
+    "bindings": {
+      "space /": "vim::ToggleComments"
+    }
+  },
+  {
+    "context": "vim_mode == normal",
+    "bindings": {
+      "space /": "vim::ToggleComments"
+    }
+  },
+  {
+    "context": "Workspace && !Terminal",
+    "use_key_equivalents": true,
+    "bindings": {
+      "space r f": "task::Spawn",
+      "space r l": "task::Rerun"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
+    "bindings": {
+      "space g g": [
+        "task::Spawn",
+        { "task_name": "Lazygit", "target": "center" }
+      ]
+    }
+  }
+]
