@@ -60,5 +60,21 @@
   },
   "features": {
     "inline_completion_provider": "copilot"
+  },
+  "language_overrides": {
+    "Rust": {
+      "inlay_hints": {
+        "enabled": true
+      }
+    }
+  },
+  "lsp": {
+    "rust-analyzer": {
+      "initialization_options": {
+        "checkOnSave": {
+          "command": "clippy"
+        }
+      }
+    }
   }
 }
