@@ -1,4 +1,10 @@
 {
+  "languages": {
+    "Rust": {
+      "show_inline_completions": true
+    }
+  },
+  "icon_theme": "Catppuccin Macchiato",
   "show_inline_completions": true,
   "assistant": {
     "default_model": {
@@ -89,7 +95,6 @@
         },
         "validation": {
           "enabled": true,
-          // To enable linting, manually install ansible-lint and make sure it is your PATH
           "lint": {
             "enabled": true,
             "path": "ansible-lint"
