@@ -2,7 +2,11 @@
   {
     "context": "Editor",
     "bindings": {
-      "j k": ["workspace::SendKeystrokes", "escape cmd-s"]
+      "j k": ["workspace::SendKeystrokes", "escape cmd-s"],
+      "g r": "editor::FindAllReferences",
+      "g D": "editor::GoToDefinition",
+      "g d": "editor::GoToDeclaration",
+      "g a": "editor::ToggleCodeActions"
     }
   },
   {
@@ -18,19 +22,26 @@
     "bindings": {
       "g a": "editor::ToggleCodeActions",
       "g shift-a": "editor::SelectAllMatches",
-      "space o": "outline::Toggle"
+      "space o": "outline::Toggle",
+      "g D": "editor::GoToDefinition",
+      "g d": "editor::GoToDeclaration",
+      "g r": "editor::FindAllReferences"
     }
   },
   {
     "context": "vim_mode == visual",
     "bindings": {
-      "space /": "vim::ToggleComments"
+      "space /": "vim::ToggleComments",
+      "ctrl-n": "vim::SelectLargerSyntaxNode",
+      "ctrl-shift-n": "vim::SelectSmallerSyntaxNode"
     }
   },
   {
     "context": "vim_mode == normal",
     "bindings": {
-      "space /": "vim::ToggleComments"
+      "space /": "vim::ToggleComments",
+      "ctrl-n": "vim::SelectLargerSyntaxNode",
+      "ctrl-shift-n": "vim::SelectSmallerSyntaxNode"
     }
   },
   {
