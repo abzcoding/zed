@@ -9,7 +9,7 @@
   "assistant": {
     "default_model": {
       "provider": "copilot_chat",
-      "model": "o3-mini"
+      "model": "claude-3-5-sonnet"
     },
     "version": "2"
   },
@@ -65,7 +65,7 @@
     "show_other_hints": true
   },
   "features": {
-    "inline_completion_provider": "copilot"
+    "edit_prediction_provider": "zed"
   },
   "language_overrides": {
     "Rust": {

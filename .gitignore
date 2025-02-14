@@ -3,3 +3,4 @@ prompts
 themes
 .DS_Store
 .tmp*
+keymap_backup.json

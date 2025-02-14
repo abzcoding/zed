@@ -55,10 +55,7 @@
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
-      "space g g": [
-        "task::Spawn",
-        { "task_name": "Lazygit", "target": "center" }
-      ]
+      "space g g": ["task::Spawn", { "task_name": "lazygit" }]
     }
   }
 ]
