@@ -29,15 +29,7 @@
     }
   },
   {
-    "context": "vim_mode == visual",
-    "bindings": {
-      "space /": "vim::ToggleComments",
-      "ctrl-n": "vim::SelectLargerSyntaxNode",
-      "ctrl-shift-n": "vim::SelectSmallerSyntaxNode"
-    }
-  },
-  {
-    "context": "vim_mode == normal",
+    "context": "vim_mode == normal || vim_mode == visual",
     "bindings": {
       "space /": "vim::ToggleComments",
       "ctrl-n": "vim::SelectLargerSyntaxNode",
@@ -55,7 +47,21 @@
   {
     "context": "Editor && vim_mode == normal && !VimWaiting && !menu",
     "bindings": {
-      "space g g": ["task::Spawn", { "task_name": "lazygit" }]
+      "space g g": [
+        "task::Spawn",
+        { "task_name": "Lazygit", "reveal_target": "center" }
+      ]
+    }
+  },
+  {
+    "context": "Terminal",
+    "use_key_equivalents": true,
+    "bindings": {
+      "ctrl-w": null,
+      "ctrl-w left": "workspace::ActivatePaneLeft",
+      "ctrl-w right": "workspace::ActivatePaneRight",
+      "ctrl-w up": "workspace::ActivatePaneUp",
+      "ctrl-w down": "workspace::ActivatePaneDown"
     }
   }
 ]
