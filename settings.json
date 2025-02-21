@@ -1,4 +1,5 @@
 {
+  "format_on_save": "off",
   "icon_theme": "Catppuccin Macchiato",
   "show_edit_predictions": true,
   "assistant": {
@@ -42,7 +43,8 @@
     "button": false,
     "env": {
       "EDITOR": "zed --wait"
-    }
+    },
+    "dock": "right"
   },
   "tab_bar": {
     "show": true,
